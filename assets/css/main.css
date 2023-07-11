@@ -173,7 +173,7 @@ footer .social .solial__links a {
 footer .social .solial__links a svg {
   font-size: 1.5rem;
 }
-footer .flateform-app {
+footer .platform-app {
   display: none;
 }
 
@@ -282,29 +282,29 @@ main .study .study__btn .syudy__complate--btn {
   padding: 15px;
   border-radius: 25px;
 }
-main .plateform-app {
+main .platform-app {
   padding: 20px;
   direction: rtl;
   text-align: center;
 }
-main .plateform-app .plateform__app--links h5 {
+main .platform-app .platform__app--links h5 {
   margin-bottom: 10px;
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.6;
 }
-main .plateform-app .plateform__app--links ol {
+main .platform-app .platform__app--links ol {
   text-align: start;
   padding: 20px;
 }
-main .plateform-app .plateform__app--links .app-links a {
+main .platform-app .platform__app--links .app-links a {
   display: block;
   margin: 10px 0;
 }
-main .plateform-app .img {
+main .platform-app .img {
   margin-top: 20px;
 }
-main .plateform-app .img img {
+main .platform-app .img img {
   width: 100%;
 }
 main .subscription {
@@ -385,7 +385,7 @@ main .subscription .subscription-btn a {
   main .study .study__btn a {
     display: inline-block;
   }
-  main .plateform-app .plateform__app--links .app-links a {
+  main .platform-app .platform__app--links .app-links a {
     display: inline-block;
   }
 }
@@ -405,14 +405,14 @@ main .subscription .subscription-btn a {
     display: inline-block;
     margin: 20px;
   }
-  main .plateform-app {
+  main .platform-app {
     display: flex;
     align-items: center;
   }
-  main .plateform-app .plateform__app--links {
+  main .platform-app .platform__app--links {
     text-align: start;
   }
-  main .plateform-app .plateform__app--links .app-links a {
+  main .platform-app .platform__app--links .app-links a {
     display: inline-block;
   }
   main .subscription {

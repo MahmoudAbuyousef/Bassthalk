@@ -107,11 +107,11 @@ main {
       }
     }
   }
-  .plateform-app {
+  .platform-app {
     padding: 20px;
     direction: rtl;
     text-align: center;
-    .plateform__app--links {
+    .platform__app--links {
       h5 {
         margin-bottom: 10px;
         font-size: 1.5rem;
@@ -228,8 +228,8 @@ main {
         }
       }
     }
-    .plateform-app {
-      .plateform__app--links {
+    .platform-app {
+      .platform__app--links {
         .app-links {
           a {
             display: inline-block;
@@ -260,10 +260,10 @@ main {
         }
       }
     }
-    .plateform-app {
+    .platform-app {
       display: flex;
       align-items: center;
-      .plateform__app--links {
+      .platform__app--links {
         text-align: start;
         .app-links {
           a {
