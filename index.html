@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>بسطهالك</title>
+    <title>بسطتهالك</title>
     <!-- ============================ Fonts =========================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap" rel="stylesheet" />
     <!-- ============================ Bootstrap ======================= -->
     <link rel="stylesheet" href="assets/css/libs/bootstrap.min.css" />
-    <!-- ============================ Swiper ========================== -->
-    <link rel="stylesheet" href="assets/css/libs/swiper-bundle.min.css" />
     <!-- ============================ Icons =========================== -->
     <link rel="stylesheet" href="assets/css/libs/all.min.css" />
     <!-- ============================ Main Style ====================== -->
@@ -26,19 +24,19 @@
       </div>
       <ul class="nav__links" dir="rtl">
         <li>
-          <a href="#">الرئسية</a>
+          <a href="index.html">الرئسية</a>
         </li>
         <li>
-          <a href="#">احنا مين</a>
+          <a href="#aboutus">احنا مين</a>
         </li>
         <li>
-          <a href="#">تطبيقاتنا</a>
+          <a href="#slider">تطبيقاتنا</a>
         </li>
         <li>
-          <a href="#">باقاتنا</a>
+          <a href="#subscription">باقاتنا</a>
         </li>
         <li>
-          <a href="#">الكورسات</a>
+          <a href="#courses">الكورسات</a>
         </li>
       </ul>
       <ul class="btn-links">
@@ -50,7 +48,7 @@
     </nav>
     <main>
       <!-- ===================================== Hero Section ======================================= -->
-      <section class="hero">
+      <section class="hero section">
         <div class="about">
           <p class="what-is"><img src="assets/images/icon/fire.png" alt="" /> اي هيا بستطهالك؟</p>
           <p class="about__info">بسطتهالك منصة تعليمية للمرحلة الثانوية توفر نظام تعليمي متكامل هيساعد طلابنا ينظموا مذاكرتهم ويلاقوا المتابعة اللي محتاجينها</p>
@@ -66,7 +64,7 @@
         </div>
       </section>
       <!-- ===================================== Slider Section ===================================== -->
-      <div class="slider">
+      <div class="slider section" id="slider">
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -107,7 +105,7 @@
         </div>
       </div>
       <!-- ===================================== Study Section ====================================== -->
-      <section class="study">
+      <section class="aboutus section" id="aboutus">
         <div class="img">
           <img src="assets/images/item/9 SCENE.a2fc958.png" alt="" />
         </div>
@@ -127,7 +125,7 @@
         </div>
       </section>
       <!-- ===================================== platform Section ================================== -->
-      <section class="platform-app">
+      <section class="platform-app section">
         <div class="platform__app--links">
           <p>تطبيق بستطهالك<img src="assets/images/icon/phone.png" alt="" /></p>
           <h5>لأن هدفنا هو تبسيط كل حاجة في دراستك، عملنا تطبيقاتنا اللي هيساعدك في المذاكرة وتنظيمها</h5>
@@ -150,7 +148,7 @@
         </div>
       </section>
       <!-- ===================================== Subscription Section =============================== -->
-      <section class="subscription">
+      <section class="subscription section" id="subscription">
         <div class="heading">
           <p>اشترك مع <span>بسطتهالك</span></p>
           <p class="text">اختار المرحلة الدراسية بتاعتك والصف الدراسي وشعبتك، وبعد كده حدد المواد اللي عايز تذاكرها على بسطتهالك</p>
@@ -172,21 +170,28 @@
           </form>
           <div class="sections-study">
             <div class="item">
-              <h6>الاحياء</h6>
-              <p class="price">50جنية</p>
+              <h6>علم النفس والاجتماع</h6>
+              <p class="price">75جنية</p>
             </div>
             <div class="item">
-              <h6>الاحياء</h6>
-              <p class="price">50جنية</p>
+              <h6>فلسفة ومنطق</h6>
+              <p class="price">75جنية</p>
             </div>
             <div class="item">
-              <h6>الاحياء</h6>
-              <p class="price">10جنية</p>
+              <h6>اللغة العربية</h6>
+              <p class="price">75جنية</p>
             </div>
             <div class="item">
               <h6>
                 اللغة <br />
-                الفرنسية
+                العربية
+              </h6>
+              <p class="price">75جنية</p>
+            </div>
+            <div class="item">
+              <h6>
+                اللغة <br />
+                الانجليزية
               </h6>
               <p class="price">75جنية</p>
             </div>
@@ -195,7 +200,28 @@
                 اللغة <br />
                 الفرنسية
               </h6>
-              <p class="price">75جنية</p>
+              <p class="price">100جنية</p>
+            </div>
+            <div class="item">
+              <h6>
+                اللغة <br />
+                الفرنسية
+              </h6>
+              <p class="price">100جنية</p>
+            </div>
+            <div class="item">
+              <h6>
+                اللغة <br />
+                الالمانية
+              </h6>
+              <p class="price">100جنية</p>
+            </div>
+            <div class="item">
+              <h6>
+                اللغة <br />
+                الالمانية
+              </h6>
+              <p class="price">100جنية</p>
             </div>
           </div>
           <div class="subscription-btn">
@@ -204,8 +230,11 @@
         </div>
       </section>
       <!-- ===================================== Courses Section ==================================== -->
-      <section class="courses">
-        <div class="links"></div>
+      <section class="courses section" id="courses">
+        <div class="links">
+          <h4>الكورسات<img src="assets/images/icon/books.png" alt="" /></h4>
+          <a href="courses.html">كل الكورسات</a>
+        </div>
       </section>
     </main>
     <footer>
@@ -251,8 +280,6 @@
     </footer>
     <!-- ============================ Bootstrap ======================= -->
     <script src="assets/js/libs/bootstrap.min.js"></script>
-    <!-- ============================ Swiper ======================= -->
-    <script src="assets/js/libs/swiper-bundle.min.js"></script>
     <!-- ============================ Icons ======================= -->
     <script src="assets/js/libs/all.min.js"></script>
     <!-- ============================ Main Js ======================= -->

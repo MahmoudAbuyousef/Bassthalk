@@ -23,6 +23,12 @@ a {
   text-decoration: none;
 }
 
+.section {
+  direction: rtl;
+  margin: 50px 0;
+  padding: 20px;
+}
+
 nav {
   position: sticky;
   top: 0;
@@ -193,7 +199,6 @@ footer .platform-app {
   }
 }
 main .hero {
-  padding: 80px 30px 20px 30px;
   text-align: center;
 }
 main .hero .about .what-is {
@@ -223,7 +228,6 @@ main .hero .img img {
   width: 100%;
 }
 main .slider {
-  padding: 20px;
   background-color: #168ecd;
 }
 main .slider .carousel.slide .carousel-inner .carousel-item img {
@@ -233,58 +237,52 @@ main .slider .carousel.slide .carousel-inner .carousel-item .carousel-caption {
   position: relative;
   top: 0;
   left: 0;
-  direction: rtl;
+  right: 0;
   text-align: center;
   margin: auto;
 }
-main .study {
-  padding: 20px;
-  direction: rtl;
-}
-main .study .img img {
+main .aboutus .img img {
   width: 100%;
 }
-main .study .text {
+main .aboutus .text {
   padding: 10px;
 }
-main .study .text .heading {
+main .aboutus .text .heading {
   text-align: center;
 }
-main .study .text h5 {
+main .aboutus .text h5 {
   font-size: 1.8rem;
   font-weight: block;
 }
-main .study .text ol {
+main .aboutus .text ol {
   margin-top: 10px;
 }
-main .study .text ol li {
+main .aboutus .text ol li {
   color: #8d8e91;
 }
-main .study .study__btn {
+main .aboutus .study__btn {
   margin-top: 10px;
 }
-main .study .study__btn a {
+main .aboutus .study__btn a {
   display: block;
   margin: auto;
   text-align: center;
   margin-top: 10px;
   width: 200px;
 }
-main .study .study__btn .study__go--btn {
+main .aboutus .study__btn .study__go--btn {
   background-color: #168ecd;
   color: #fff;
   padding: 15px;
   border-radius: 25px;
 }
-main .study .study__btn .syudy__complate--btn {
+main .aboutus .study__btn .syudy__complate--btn {
   color: #168ecd;
   border: 2px solid #168ecd;
   padding: 15px;
   border-radius: 25px;
 }
 main .platform-app {
-  padding: 20px;
-  direction: rtl;
   text-align: center;
 }
 main .platform-app .platform__app--links h5 {
@@ -308,7 +306,7 @@ main .platform-app .img img {
   width: 100%;
 }
 main .subscription {
-  margin: 50px 0;
+  padding: 0;
 }
 main .subscription .heading {
   text-align: center;
@@ -331,22 +329,26 @@ main .subscription form select {
   border-radius: 5px;
   padding: 10px;
   width: 100%;
-  direction: rtl;
+  color: #8d8e91;
+  background-color: #f3f2f7;
 }
 main .subscription .sections-study {
   padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row-reverse;
+  flex-direction: row;
   flex-wrap: wrap;
 }
 main .subscription .sections-study .item {
-  margin: 10px 20px 10px 0;
+  width: calc((100% - 20px) / 2);
+  height: 120px;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 3px;
+  margin: 0 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
   color: #8d8e91;
+  margin: 5px;
 }
 main .subscription .sections-study .item h6 {
   font-size: 1rem;
@@ -362,27 +364,32 @@ main .subscription .subscription-btn a {
   border-radius: 20px;
   opacity: 0.6;
 }
+main .courses .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .courses .links h4 img {
+  width: 15px;
+  margin-right: 5px;
+}
 
 @media (min-width: 576px) {
-  main .subscription form {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-  }
   main .subscription form select {
     display: inline-block;
-    width: calc((100% - 30px) / 3);
+    width: 200px;
+    margin: 10px;
   }
   main .subscription .sections-study .item {
-    padding: 50px;
+    width: 150px;
   }
 }
 @media (min-width: 601px) {
-  main .study {
+  main .aboutus {
     margin-top: 60px;
     display: flex;
   }
-  main .study .study__btn a {
+  main .aboutus .study__btn a {
     display: inline-block;
   }
   main .platform-app .platform__app--links .app-links a {
@@ -394,8 +401,8 @@ main .subscription .subscription-btn a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row-reverse;
-    text-align: end;
+    flex-direction: row;
+    text-align: start;
   }
   main .hero .about {
     padding: 30px;
@@ -414,24 +421,5 @@ main .subscription .subscription-btn a {
   }
   main .platform-app .platform__app--links .app-links a {
     display: inline-block;
-  }
-  main .subscription {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: center;
-  }
-  main .subscription form {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: center;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  main .subscription form select {
-    display: inline-block;
-    width: 200px;
-    margin: 0 20px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -2,7 +2,6 @@
 @use "../helpers/variables" as *;
 main {
   .hero {
-    padding: 80px 30px 20px 30px;
     text-align: center;
     .about {
       .what-is {
@@ -40,7 +39,6 @@ main {
     }
   }
   .slider {
-    padding: 20px;
     background-color: $main_color;
     .carousel.slide {
       .carousel-inner {
@@ -52,7 +50,7 @@ main {
             position: relative;
             top: 0;
             left: 0;
-            direction: rtl;
+            right: 0;
             text-align: center;
             margin: auto;
           }
@@ -60,9 +58,7 @@ main {
       }
     }
   }
-  .study {
-    padding: 20px;
-    direction: rtl;
+  .aboutus {
     .img {
       img {
         width: 100%;
@@ -108,8 +104,6 @@ main {
     }
   }
   .platform-app {
-    padding: 20px;
-    direction: rtl;
     text-align: center;
     .platform__app--links {
       h5 {
@@ -137,7 +131,7 @@ main {
     }
   }
   .subscription {
-    margin: 50px 0;
+    padding: 0;
     .heading {
       text-align: center;
       p {
@@ -160,7 +154,8 @@ main {
         border-radius: 5px;
         padding: 10px;
         width: 100%;
-        direction: rtl;
+        color: $text_color;
+        background-color: #f3f2f7;
       }
     }
     .sections-study {
@@ -168,14 +163,17 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: row-reverse;
+      flex-direction: row;
       flex-wrap: wrap;
       .item {
-        margin: 10px 20px 10px 0;
+        width: calc((100% - 20px) / 2);
+        height: 120px;
         padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 3px;
+        margin: 0 10px;
+        border: 2px solid #ddd;
+        border-radius: 5px;
         color: $text_color;
+        margin: 5px;
         h6 {
           font-size: 1rem;
           font-weight: bold;
@@ -195,23 +193,34 @@ main {
       }
     }
   }
+  .courses {
+    .links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h4 {
+        img {
+          width: 15px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 576px) {
   main {
     .subscription {
       form {
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
         select {
           display: inline-block;
-          width: calc((100% - 30px) / 3);
+          width: 200px;
+          margin: 10px;
         }
       }
       .sections-study {
         .item {
-          padding: 50px;
+          width: 150px;
         }
       }
     }
@@ -219,7 +228,7 @@ main {
 }
 @media (min-width: 601px) {
   main {
-    .study {
+    .aboutus {
       margin-top: 60px;
       display: flex;
       .study__btn {
@@ -245,8 +254,8 @@ main {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-direction: row-reverse;
-      text-align: end;
+      flex-direction: row;
+      text-align: start;
       .about {
         padding: 30px;
         width: 60%;
@@ -269,24 +278,6 @@ main {
           a {
             display: inline-block;
           }
-        }
-      }
-    }
-    .subscription {
-      display: flex;
-      align-items: center;
-      flex-direction: row-reverse;
-      justify-content: center;
-      form {
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        justify-content: center;
-        width: fit-content;
-        select {
-          display: inline-block;
-          width: 200px;
-          margin: 0 20px;
         }
       }
     }
