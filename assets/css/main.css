@@ -32,7 +32,7 @@ a {
 nav {
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: #fff;
   display: flex;
   align-items: center;
@@ -372,6 +372,9 @@ main .courses .links {
 main .courses .links h4 img {
   width: 15px;
   margin-right: 5px;
+}
+main .courses .carousel .carousel-inner .carousel-item .carousel-caption {
+  color: #fff;
 }
 
 @media (min-width: 576px) {
