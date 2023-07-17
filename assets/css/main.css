@@ -373,8 +373,104 @@ main .courses .links h4 img {
   width: 15px;
   margin-right: 5px;
 }
-main .courses .carousel .carousel-inner .carousel-item .carousel-caption {
-  color: #fff;
+main .courses .slide-container {
+  width: 100%;
+  padding: 40px 0;
+}
+main .courses .slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+}
+main .courses .card {
+  border: none;
+  background-color: #fff;
+}
+main .courses .image-content,
+main .courses .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+main .courses .image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+main .courses .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+main .courses .overlay::before,
+main .courses .overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+}
+main .courses .overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+main .courses .card-image {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  padding: 3px;
+}
+main .courses .card-image .card-img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .courses .name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+}
+main .courses .description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+main .courses .swiper-navBtn {
+  color: #6e93f7;
+  transition: color 0.3s ease;
+}
+main .courses .swiper-navBtn:hover {
+  color: #4070f4;
+}
+main .courses .swiper-navBtn::before,
+main .courses .swiper-navBtn::after {
+  font-size: 35px;
+}
+main .courses .swiper-button-next {
+  right: 0;
+}
+main .courses .swiper-button-prev {
+  left: 0;
+}
+main .courses .swiper-pagination-bullet {
+  background-color: #6e93f7;
+  opacity: 1;
+}
+main .courses .swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+@media screen and (max-width: 768px) {
+  main .courses .slide-content {
+    margin: 0 10px;
+  }
+  main .courses .swiper-navBtn {
+    display: none;
+  }
 }
 
 @media (min-width: 576px) {
